@@ -3,7 +3,7 @@ def square(n):
     n *= n
 
 def mainFunction():
-    num = 4
+    num = 7667
     square(num)
     print(num)
 
