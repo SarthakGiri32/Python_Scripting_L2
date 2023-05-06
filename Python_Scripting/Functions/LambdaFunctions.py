@@ -1,9 +1,6 @@
 import math
 
 #Syntax of Lamda Expressions: lambda [arg1 [,arg2,.....argn]]:expression
-addition = lambda n1, n2: n1 + n2
-
-print(f"4564 + 354 = {addition(4564, 354)}")
 
 loopMultiplication = lambda n1, *numbers: n1 + numbers[len(numbers) - 2]
 
