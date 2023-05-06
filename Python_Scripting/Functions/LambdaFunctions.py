@@ -18,4 +18,15 @@ print(bodmasExpression(34, 31, 20, 19))
 # higher order lambda functions
 higherOrderLambda = lambda x, func: x * func(x)
 print(higherOrderLambda(243/545, math.sin))
-print(higherOrderLambda(564354, lambda x: x * 4533))
+print(higherOrderLambda(564354, lambda x: x // 4533))
+
+print((lambda x: (x % 2 and 'odd' or 'even'))(234))
+print((lambda x: (x % 2 and 'odd' or 'even'))(4564219))
+
+# Argument types in lambda
+print((lambda x, y, z=342342: x / y * z)(131232, 98786))
+print((lambda x, y, z=243121: x / y * z)(y=232, x=11231))
+print((lambda *numbers: sum(numbers))(23432, 987876, 65461, 684774))
+print((lambda **numbers: sum(numbers.values()))(n1 = 234242, n2 = 651146, n3 = 5346867, n4 = 56487, n5 = 5646867, n6 = 357744))
+
+
