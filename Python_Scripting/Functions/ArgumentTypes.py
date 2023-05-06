@@ -1,3 +1,4 @@
+#Argument Types
 #Keyword arguments
 def printinfo(name, age):
    "This prints a passed info into this function"
