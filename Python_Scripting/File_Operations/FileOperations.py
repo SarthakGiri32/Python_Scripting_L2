@@ -16,4 +16,3 @@ with open("Python_Scripting\\File_Operations\\test2.txt", "w") as fwHandle:
     # write contents to the test2.txt file
     fwHandle.write("Progamming is fun, especially with file operations.")
     fwHandle.write("\nLets see how far we can go today.")
-
