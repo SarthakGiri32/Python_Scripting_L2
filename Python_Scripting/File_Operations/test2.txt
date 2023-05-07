@@ -1,0 +1,2 @@
+Progamming is fun, especially with file operations.
+Lets see how far we can go today.
