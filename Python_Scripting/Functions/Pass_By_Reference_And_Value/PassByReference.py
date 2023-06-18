@@ -2,14 +2,18 @@
 def square(n):
     n *= n
 
-def mainFunction():
+
+def main_function():
     num = 7667
     square(num)
     print(num)
 
-mainFunction()
 
-# explaining the above demo by using id() on a different demo. id() displays the memory address of a variable passed to it
+main_function()
+
+
+# explaining the above demo by using id() on a different demo. id() displays the memory address of a variable passed
+# to it
 def main():
     n = 98927864
     print(f"Initial address of n: {id(n)}")
@@ -18,6 +22,7 @@ def main():
     print(f"Final address of n: {id(n)}")
     print("Final value of n:", n)
 
+
 def increment(m):
     print(f"Initial address of m: {id(m)}")
     print("Initial value of m:", m)
@@ -25,5 +30,5 @@ def increment(m):
     print(f"Final address of m: {id(m)}")
     print("Final value of m:", m)
 
+
 main()
-    
