@@ -14,5 +14,10 @@ with open("Python_Scripting\\File_Operations\\test.txt", "r") as fHandle:
 with open("Python_Scripting\\File_Operations\\test2.txt", "w") as fwHandle:
 
     # write contents to the test2.txt file
-    fwHandle.write("Progamming is fun, especially with file operations.")
-    fwHandle.write("\nLets see how far we can go today.")
+    lines = ["Progamming is fun, especially with file operations.", "\nLets see how far we can go today."]
+    # for writing line by line
+    # for line in lines:
+    #     fwHandle.write(line)
+
+    # for writing multiple lines to a file
+    fwHandle.writelines(lines)
