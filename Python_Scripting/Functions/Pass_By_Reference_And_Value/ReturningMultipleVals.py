@@ -1,33 +1,39 @@
 # Demo of passing by reference in python by returning multiple values from a function
-def greetingGenerator(name, ctr):
+def greeting_generator(name, ctr):
     ctr += 1
     return f"Hi, {name}", ctr
+
 
 def main():
     counter = 0
     print(f"Original Counter value: {counter}")
-    greeting1, counter = greetingGenerator("Alice", counter)
+    greeting1, counter = greeting_generator("Alice", counter)
     print(f"{greeting1}\nIncremented Counter Value: {counter}")
-    greeting1, counter = greetingGenerator("Bob", counter)
+    greeting1, counter = greeting_generator("Bob", counter)
     print(f"{greeting1}\nIncremented Counter Value: {counter}")
+
 
 main()
 
+
 # Demo of returning multiple values from a function used in a condition
-def tryIntegerParse(string, intBase = 10):
+def try_integer_parse(string, intBase=10):
     try:
         return True, int(string, base=intBase)
     except:
         return False, None
-    
-isIntParsed, resultInt = tryIntegerParse("123")
+
+
+isIntParsed, resultInt = try_integer_parse("123")
 print(f"{isIntParsed}, {resultInt}")
 
-def tryIntegerParse2(string, intBase = 10):
+
+def tryIntegerParse2(string, intBase=10):
     try:
         return int(string, base=intBase)
     except ValueError:
         return None
+
 
 numberStr = input("Enter a string to be converted to a number:\n")
 
